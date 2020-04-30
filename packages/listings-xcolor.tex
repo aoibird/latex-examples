@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{listings}
+\usepackage{xcolor}
+
+% solarized color scheme
+\definecolor{Base}{HTML}{073642}
+\definecolor{Red}{HTML}{dc322f}
+\definecolor{Green}{HTML}{859900}
+\definecolor{Yellow}{HTML}{b58900}
+\definecolor{Blue}{HTML}{268bd2}
+\definecolor{Magenta}{HTML}{d33682}
+\definecolor{Cyan}{HTML}{2aa198}
+\definecolor{Orange}{HTML}{cb4b16}
+\definecolor{Violet}{HTML}{6c71c4}
+
+\lstset{
+  xleftmargin=\parindent,
+  columns=flexible,
+  numbers=left,
+  captionpos=b,
+  basicstyle=\ttfamily\scriptsize\color{Base},
+  commentstyle=\itshape\color{Cyan},
+  keywordstyle=\bfseries\color{Blue},
+  stringstyle=\color{Magenta},
+  identifierstyle=\color{Red},
+  numberstyle=\ttfamily\color{Violet}
+}
+
+\title{listings + xcolor}
+\author{aoibird}
+\date{2020-04-30}
+
+\begin{document}
+\maketitle
+
+\begin{lstlisting}[language=C++, caption=linear search]
+// Linear search
+int linear_search(int *a, int N, int kw) {
+  for (int i = 0; i < N; i++) {
+    if (a[i] == kw) { printf("Found\n"); return i; }
+  }
+  return -1;
+}
+\end{lstlisting}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
