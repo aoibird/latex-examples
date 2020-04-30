@@ -1,0 +1,140 @@
+\documentclass{beamer}
+
+\useoutertheme{infolines}
+\useinnertheme{rectangles}
+\usecolortheme{seahorse}
+\usecolortheme{rose}
+% \usefonttheme[onlymath]{serif}
+
+\title{\texttt{beamer}}
+\subtitle{the demonstration}
+\author{aoibird}
+\date{\today}
+
+\begin{document}
+
+\frame{\titlepage}              % tite page
+
+\AtBeginSection[] % Do nothing for \section*
+{
+  \frame{\sectionpage}
+  \begin{frame}<beamer>
+    \frametitle{Outline}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+\section{Environments}
+
+\subsection{Plain}
+\begin{frame}
+  \frametitle{\insertsubsectionhead}
+  \begin{itemize}
+  \item One
+  \item Two
+  \item Three
+  \end{itemize}
+  Plain text.
+\end{frame}
+
+\subsection{Block}
+\begin{frame}[allowframebreaks]
+  \frametitle{\insertsubsectionhead}
+  \begin{block}{enumerate}
+    \begin{enumerate}
+    \item One
+    \item Two
+    \item Three
+    \end{enumerate}
+  \end{block}
+  \framebreak
+  \begin{block}{itemize}
+    \begin{itemize}
+    \item One
+    \item Two
+    \item Three
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\subsection{Example}
+\begin{frame}
+  \frametitle{\insertsubsectionhead}
+  \begin{example}
+    \begin{itemize}
+    \item Example 1
+    \item Example 2
+    \item Example 3
+    \end{itemize}
+  \end{example}
+\end{frame}
+
+\subsection{Definition}
+
+\begin{frame}
+  \frametitle{\insertsubsectionhead}
+  \begin{definition}
+    We define ...
+  \end{definition}
+\end{frame}
+
+\subsection{Theorem}
+\begin{frame}
+  \frametitle{\insertsubsectionhead}
+  \begin{theorem}
+    There is no largest prime number.
+  \end{theorem}
+\end{frame}
+
+\section{Overlays}
+
+\subsection{\texttt{<1->}}
+\begin{frame}
+  \frametitle{\insertsubsectionhead}
+  \begin{enumerate}
+  \item<1- | alert@+> One
+  \item<2- | alert@+> Two
+  \item<3- | alert@+> Three
+  \end{enumerate}
+\end{frame}
+
+\subsection{\texttt{<1>}}
+\begin{frame}
+  \frametitle{\insertsubsectionhead}
+  \begin{enumerate}
+  \item<1> One
+  \item<2> Two
+  \item<3> Three
+  \end{enumerate}
+\end{frame}
+
+\subsection{\texttt{<+->}}
+\begin{frame}[<+->]
+  \frametitle{\insertsubsectionhead}
+  \begin{example}
+    For example, \dots
+  \end{example}
+  \begin{proof}
+    We can \dots
+  \end{proof}
+
+\end{frame}
+
+\section{Conclusion}
+
+\begin{frame}
+  \frametitle{\insertsectionhead}
+  The end.
+\end{frame}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% TeX-engine: xetex
+%%% End:
