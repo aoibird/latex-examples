@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{bytefield}
+
+\title{bytefield}
+\author{aoibird}
+\date{2020-04-30}
+
+\begin{document}
+\maketitle
+
+\section{bitbox + bitwidth}
+\begin{bytefield}[bitwidth=4em]{8}
+  \bitbox{1}{A} & \bitbox{2}{B} & \bitbox{1}{C} & \bitbox{3}{D} \bitbox{1}{E}
+\end{bytefield}
+
+\section{bitbox + bitwidth + bitheader}
+\begin{bytefield}[bitwidth=4em]{8}
+  \bitheader[endianness=big]{0-7} \\
+  \bitbox{1}{A} & \bitbox{2}{B} & \bitbox{1}{C} & \bitbox{3}{D} \bitbox{1}{E}
+\end{bytefield}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
