@@ -1,0 +1,26 @@
+\documentclass[12pt]{article}
+\usepackage{fontspec}
+\setromanfont{Hoefler Text}
+\newfontfamily{\A}{Geeza Pro}
+\newfontfamily{\Z}[Scale=0.9]{Corsiva Hebrew}
+\newfontfamily{\J}[Scale=0.85]{Osaka}
+\newfontfamily{\C}[Scale=0.8]{Songti SC}
+
+\title{fontspec}
+\author{aoibird}
+\date{2020-04-30}
+
+\begin{document}
+\maketitle
+
+This is Chinese: {\C 中文。}
+
+Here are some multilingual Unicode fonts: this is Arabic text: {\A السلام عليكم}, this is Hebrew: {\Z שלום},
+and here's some Japanese: {\J 今日は}. (from MacTeX)
+
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% TeX-engine: xetex
+%%% End:
