@@ -1,0 +1,53 @@
+\documentclass{article}
+\title{Lists}
+\author{aoibird}
+\date{2020-04-30}
+
+\begin{document}
+\maketitle
+
+\section{itemize}
+
+\begin{itemize}
+\item Item
+  \begin{itemize}
+  \item Item
+  \item Item
+  \end{itemize}
+\item Item
+\item[*] Can customize label
+\end{itemize}
+
+\section{enumerate}
+
+\begin{enumerate}
+\item First
+  \begin{enumerate}
+  \item A
+  \item B
+  \end{enumerate}
+\item Second
+\item Third
+\item[1000] Can customize label
+\end{enumerate}
+
+\section{description}
+
+\begin{description}
+\item[LA] Linear algebra
+  \begin{description}
+  \item[Matrix] A matrix is
+  \item[Vector] A vector is
+  \end{description}
+\item[PS] Probability and statistics
+\end{description}
+
+
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% TeX-engine: xetex
+%%% End:
