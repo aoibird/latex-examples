@@ -2,8 +2,8 @@
 
 Repository for demonstrating LaTeX.
 
-* Document class
-- /Article/ ([[file:article.tex][article.tex]], [[file:article.pdf][article.pdf]])
+* Document classes
+- Article ([[file:article.tex][article.tex]], [[file:article.pdf][article.pdf]])
 
 * Elements
 - Lists ([[file:elements/lists.tex][lists.tex]], [[file:elements/lists.pdf][lists.pdf]])
