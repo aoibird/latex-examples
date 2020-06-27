@@ -1,0 +1,36 @@
+#+TITLE: LaTeX examples
+
+Repository for demonstrating LaTeX.
+
+* Document class
+- /Article/ ([[file:article.tex][article.tex]], [[file:article.pdf][article.pdf]])
+
+* Elements
+- Lists ([[file:elements/lists.tex][lists.tex]], [[file:elements/lists.pdf][lists.pdf]])
+  - Environments =itemize=, =enumerate=, =description=
+- Tables ([[file:elements/tables.tex][tables.tex]], [[file:elements/tables.pdf][tables.pdf]])
+  - Environments =tabular=
+- Fonts ([[file:elements/fonts.tex][fonts.tex]], [[file:elements/fonts.pdf][fonts.pdf]])
+  - Commands =\text..{}=, ={..family  }=, ={..series  }=, ={..shape  }=, =\textnormal{}=, ={\normalfont  }=, =\emph{}=, ={\em  }=, =underline{}=, =\uppercase{}=, =\lowercase{}=, ={\tiny }=, ={\scriptsize  }=, ={\footnotesize  }=, ={\small  }=, ={\normalsize  }=, ={\large  }=, , ={\Large  }=, ={\LARGE  }=, ={\huge  }=, ={\Huge  }=
+- Verbatim text or preformatted text ([[file:elements/verbatim-text.tex][verbatim-text.tex]], [[file:elements/verbatim-text.pdf][verbatim-text.pdf]])
+  - Environments =verbatim=
+  - Commands =\verb=
+- Quoting text ([[file:elements/quoting-text.tex][quoting-text.tex]], [[file:elements/quoting-text.pdf][quoting-text.pdf]])
+- Paragraphs ([[file:elements/paragraphs.tex][paragraphs.tex]], [[file:elements/paragraphs.pdf][paragraphs.pdf]])
+  - Environments =flushleft=, =flushright=, =center=
+  - Commands =\noindent=, =\setlength=, =\parskip=, =\parindent=
+
+* Scenarios
+- Mathematics
+
+* Packages
+- /booktabs/ ([[file:packages/booktabs.tex][booktabs.tex]], [[file:packages/booktabs.pdf][booktabs.pdf]])
+- /tabularx/ ([[file:packages/tabularx.tex][tabularx.tex]], [[file:packages/tabularx.pdf][tabularx.pdf]])
+- /bytefield/ ([[file:packages/bytefield.tex][bytefield.tex]], [[file:packages/bytefield.pdf][bytefield.pdf]])
+- /listings/ ([[file:packages/listings.tex][listings.tex]], [[file:packages/listings.pdf][listings.pdf]])
+- /listings/ + /xcolor/ ([[file:packages/listings-xcolor.tex][listings-xcolor.tex]], [[file:packages/listings-xcolor.pdf][listings-xcolor.pdf]])
+- /ctex/ ([[file:packages/ctex.tex][ctex.tex]], [[file:packages/ctex.pdf][ctex.pdf]])
+- /fontspec/ ([[file:packages/fontspec.tex][fontspec.tex]], [[file:packages/fontspec.pdf][fontspec.pdf]])
+
+* Beamer
+- beamer ([[file:beamer/beamer.tex][beamer.tex]], [[file:beamer/beamer.pdf][beamer.pdf]])
